@@ -1,0 +1,806 @@
+html{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(https://assets.trainline.eu/assets/images/open-home/arguments/illu-3-rails-6bbf1629d7fdf8dfa9fe4220f67f6045.jpg);
+  }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, 
+pre, form, fieldset, input, textarea, p, blockquote, th, td { 
+  padding:0;
+  margin:0;}
+
+ol, ul, li {list-style:none}
+
+:focus {outline:none}
+
+body,
+input,
+textarea,
+select {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #4c4c4c;
+}
+
+a {    
+    color: #059E87;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+p {
+  font-size: 12px;
+  width: 150px;
+  display: inline-block;
+  margin-left: 18px;
+}
+h1 {
+  font-size: 32px;
+  font-weight: 300;
+  color: #4c4c4c;
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  float: left;
+}
+h3 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+.focusing{
+    opacity: 1;
+    background-color: #FFF;
+    border: solid 1px #cbc9c9;
+  }
+.testbox {
+    margin-top: 5%;
+    transition: left .3s;
+    min-height: 460px;
+    float: left;
+    display: block;
+    margin-left: 14%;
+    width: 35%;
+    padding: 0px;
+    background-color: #FFF;
+    border-radius: .3125em;
+    color: #323E42;
+    font-family: SourceSansPro,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    position: relative;
+}
+
+form{
+  margin: 0 30px;
+}
+.grp1{
+    margin-bottom: 30px;
+}
+.search__field, .search__form, .search__section {
+    position: relative;
+}
+.passengers-field.passengers-field__passengers--0, .passengers-field.passengers-field__passengers--1 {
+    border: solid 1px #cbc9c9;
+    border-radius: .3125em;
+    background-position: 11px center;
+    background-image: url(https://assets.trainline.eu/assets/images/passenger-47004cd84d9b731383854ab84bf01f56.svg);
+}
+.search__add-participants {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 44px;
+    height: 100%;
+    padding: 0;
+    border: none;
+    border-left-color: currentcolor;
+    border-left-style: none;
+    border-left-width: medium;
+    border-left: 1px solid #DCE3E6;
+    background: url(https://assets.trainline.eu/assets/images/plus-217e7af9c79de44dfb56833d0cc554f6.svg) center no-repeat;
+    background-size: auto auto;
+    background-size: 18px 18px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.search__participants-input.focus ~ .search__add-participants {
+    border-color: #01C3A7;
+    background-image: url(https://assets.trainline.eu/assets/images/plus-217e7af9c79de44dfb56833d0cc554f6.svg);
+}
+
+input[type=text]{
+    background-color: #F6F7FA; 
+    -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+    -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+    box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+    opacity: .5;
+    padding: 11px 0 11px 35px;
+    width: 90%;
+    line-height: 20px;
+    background-repeat: no-repeat;
+    background-position: 11px center;
+    outline: 0;
+  }
+
+input[type=button]{
+  background-color: #F6F7FA; 
+  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+  box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+  padding: 11px 0 11px 35px;
+  width: 100%;
+  opacity: .5;
+  line-height: 20px;
+  background-repeat: no-repeat;
+  background-position: 11px center;
+  outline: 0;
+}
+input[type=button]:focus{
+    border: solid 1px #01C3A7; 
+    background-color: #FFF;
+    opacity: 1;
+}
+input[type=text]:focus{
+    border: solid 1px #01C3A7;   
+    background-color: #FFF;
+    opacity: 1;
+}
+
+.search__departure-input{
+    border: solid 1px #cbc9c9;
+    border-radius: .3125em;
+    border-bottom-left-radius: 0em;
+    border-bottom-right-radius: 0em;
+    border-bottom: 0px;
+    background-image: url(https://assets.trainline.eu/assets/images/from-793fd74a5d09b687beb849fab15ae7a6.svg);  
+}
+.search__via-input{
+    border: solid 1px #cbc9c9;
+    border-radius: 0em;
+  background-image: url(https://assets.trainline.eu/assets/images/via-8cccc5d5fab7ee205a0d709193760146.svg);
+}
+.search__arrival-input{
+    border: solid 1px #cbc9c9;
+    border-radius: .3125em;
+    border-top-left-radius: 0em;
+    border-top-right-radius: 0em;
+  background-image: url(https://assets.trainline.eu/assets/images/to-roundtrip-55479b6f947cee846cd66802d5d47e8a.svg);
+}
+
+.search__departure-date-input{
+    position: relative;
+    border: solid 1px #cbc9c9;
+    border-radius: .3125em;
+    border-bottom-left-radius: 0em;
+    border-bottom-right-radius: 0em;
+    border-bottom: 0px;
+    background-image: url(https://assets.trainline.eu/assets/images/calendar-outward-021f4ddf731281274d7726a793a08a79.svg);
+}
+.search__return-date-input{
+    position: relative;
+    border: solid 1px #cbc9c9;
+    border-radius: .3125em;
+    border-top-left-radius: 0em;
+    border-top-right-radius: 0em;
+    background-image: url(https://assets.trainline.eu/assets/images/calendar-inward-5d0aa59596158d156fcfa9e846b93e52.svg);
+}
+.ct-placeholder{
+    color: rgb(169, 169, 169);
+    position: absolute;
+    z-index: 2;
+    -moz-user-select: none;
+    line-height: 20px;
+    left: 36px;
+    margin-top: -30px;
+}
+.swap-button {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 1px solid #DCE3E6;
+    border-top-color: rgb(220, 227, 230);
+    border-radius: 22px;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.01);
+    background-color: #FFF;
+}
+.search__swap {
+    position: absolute;
+    top: 27%;
+    right: 56%;
+    width: 34px;
+    height: 34px;
+}
+.search__departure.focus ~ .swap-button--in-between {
+    border-top-color: #01C3A7;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.search__departure.focus ~ .swap-button--in-between .swap-button__equilibrium {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.swap-button.clicked .swap-button__label {
+    -webkit-animation: rotate180 .6s ease-in-out;
+    -moz-animation: rotate180 .6s ease-in-out;
+    animation: rotate180 .6s ease-in-out;
+}
+.swap-button__label {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    background: url(https://assets.trainline.eu/assets/images/swap-39f4eab40764c8e628e7a1c30545ef67.svg) center no-repeat;
+    color: transparent;
+    overflow: hidden;
+    font-size: 0; 
+}
+.search__button .progress-button__button {
+    width: 180px;
+}
+.button {
+    border: 1px solid #01C3A7;
+    border-bottom-color: rgb(1, 195, 167);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    color: #FFF;
+    cursor: pointer;
+    background-color: #01C3A7;
+    border-bottom: 1px solid #01907c;
+    box-shadow: 0 1px 1px -1px #8C9DA1;
+    line-height: 1.15;
+    margin: 0;
+    overflow: visible;
+}
+.button:hover{
+    background-color: rgb(1, 165, 140);
+}
+.button:focus:not(:disabled):not(:active) {
+    -webkit-animation-name: button-blink;
+    -moz-animation-name: button-blink;
+    animation-name: button-blink;
+    -moz-animation-duration: 1.25s;
+    animation-duration: 1.25s;
+    animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -moz-animation-delay: .5s;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+    -moz-transform: translateY(-1px);
+    -ms-transform: translateY(-1px);
+    transform: translateY(-1px);
+    box-shadow: 0 1px 0 0 #01907c,0 2px 1px -1px #8C9DA1;
+}
+.button, .button--light {
+    font-size: .9em;
+    font-weight: 400;
+    letter-spacing: .025em;
+    text-transform: uppercase;
+    outline: 0;
+    border-radius: .3125em;
+    padding: 12px 22px;
+    text-align: center;
+    background-image: none;
+    display: inline-block;
+    text-decoration: none;
+}
+.progress-button {
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    transition-property: transform;
+    transition-duration: .2s;
+    margin-bottom: 10px;
+}
+.search__add-cui {
+    float: left;
+    width: 185px;
+    margin-top: 13px;
+    font-size: .87em;
+}
+.search__button {
+    float: right;
+    margin-top: 0px;
+}
+.search__field {
+    width: 100%;
+    position: relative;
+}
+/*****************testbox2***************************/
+.testbox2{
+    float: right;
+    margin-right: 14%;
+    margin-top: 5%;
+    transition: left .3s;
+    min-height: 460px;
+    display: block;
+    width: 35%;
+    padding: 0px;
+    background-color: #FFF;
+    border-radius: .3125em;
+    color: #323E42;
+    font-family: SourceSansPro,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    position: relative;
+}
+.landing-panel__header {
+    border-top-right-radius: .3125em;
+    border-top-left-radius: .3125em;
+    padding: 18px 40px;
+    background: #21314D;
+    color: #fff;
+    margin: 0px;
+}
+.landing-panel__content {
+    padding: 15px 20px;
+}
+.panel__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 255px;
+    display: table;
+}
+.landing-panel__list-item {
+    font-size: 17px;
+    line-height: 1.4em;
+    display: table-row;
+    min-height: 33%;
+}
+.landing-panel__list-item .icon--price {
+    background-image: url(https://assets.trainline.eu/assets/images/open-home/icons/icon-tag-white-db66a5509c672b244e93ffbadd28b873.svg);
+}
+.landing-panel__list-item > span {
+    display: block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: center no-repeat #21314D;
+    background-image: none;
+    margin-top: 3px;
+}
+.landing-panel__list-item > div {
+    padding-left: 60px;
+}
+.landing-panel__list-item b, .landing-panel__list-item strong {
+    color: #01C3A7;
+    font-weight: 600;
+}
+.landing-panel__list-item .icon--loyalty-card {
+    background-image: url(https://assets.trainline.eu/assets/images/open-home/icons/icon-loyalty-card-white-b8fbb92eff5da55d89f515dc5e2b4031.svg);
+}
+.landing-panel__list-item .icon--payment {
+    background-image: url(https://assets.trainline.eu/assets/images/open-home/icons/icon-payment-white-13f3f68e4a260d165dd0bffc1514a98a.svg);
+}
+.landing-panel__content .hr::before {
+    background: #DCE3E6;
+    content: '';
+    height: 1px;
+    position: absolute;
+    top: 70%;
+    left: 0;
+    right: 0;
+    width: 70%;
+    margin-top: 10px;
+    margin-left: 15%;
+}
+.landing-panel__app-download {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    margin: 0 auto;
+}
+.landing-panel__app-download-title {
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 600;
+    width: 100%;
+}
+.landing-panel__app-download-badges {
+    margin-top: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.landing-panel__app-download-badges a:first-of-type {
+    margin-right: 10px;
+}
+
+.split-panel__arrow{
+    background-color: #FFF;
+    box-shadow: none;
+    border-radius: 1px;
+    content: ' ';
+    display: block;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin: -10px;
+    
+}
+
+/************T1**************/
+.search__title {
+    text-rendering: optimizeLegibility;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.search__list {
+    float: left;
+    outline: 0;
+    border-radius: .3125em;
+    border: 1px solid #DCE3E6;
+    list-style-type: none;
+    margin: 0;
+    margin-top: 10px;
+    margin-right: 80px;
+    margin-left: 10%;
+    padding: 0;
+    overflow: auto;
+    width: 80%;
+}
+.search__list-item {
+    border-bottom: 1px solid #DCE3E6;
+    color: #323E42;
+    display: block;
+    overflow: hidden;
+}
+.search__stations--list-link:hover, .search__stations--list:not(:hover) .station-item.highlighted .search__stations--list-link, .search__stations--list:not(:hover) .station-item.selected .search__stations--list-link {
+    opacity: 1;
+    background-color: #fcfcfd;
+}
+a.search__stations--list-link {
+    opacity: .6;
+    padding-left: 35px;
+}
+a.search__list-link {
+    display: block;
+    padding: 12px 0 11px;
+    padding-left: 40px;
+
+    color: #323E42;
+}
+.search__stations--list-link {
+    background: url(https://assets.trainline.eu/assets/images/location-5632039ea0e607c803bc503fba864f35.svg) 11px center no-repeat;
+    background-color: rgba(0, 0, 0, 0);
+}
+a {
+    color: #059E87;
+    text-decoration: none;
+    cursor: pointer;
+}
+.split-panel--right .ct-panel {
+    position: relative;
+}
+.search__via-icon {
+    background-image: url(https://assets.trainline.eu/assets/images/add-via-ff2137e0ba72cb639915b58caca6f280.svg);
+    background-repeat: no-repeat;
+    background-position: 11px center;
+    background-size: 16px;
+    padding-left: 35px;
+}
+.search__list-button {
+    float: right;
+    display: inline-block;
+    margin-top: 18px;
+    margin-right: 10%;
+    padding: 8px 14px;
+    padding-left: 35px;
+    cursor: pointer;
+}
+.button--light {
+    cursor: pointer;
+    background-color: #D3F9F4;
+    color: #059E87;
+    border: 1px solid #01C3A7;
+    box-shadow: none;
+}
+.button--light:hover {
+    background-color: rgb(253, 253, 253);
+}
+/************T2**************/
+.search__calendar {
+
+    table-layout: fixed;
+    margin: auto;
+    width: 95%;
+    color: #13181A;
+    font-family: SourceSansPro,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+
+}
+.search__calendar--current-month {
+
+    font-size: 20px;
+    text-transform: capitalize;
+
+}
+.search__calendar td {
+
+    padding: 7px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+.search__calendar thead td {
+
+    padding-top: 11px;
+    padding-bottom: 11px;
+
+}
+.search__calendar--decrement-month.disabled, .search__calendar--increment-month.disabled {
+
+    opacity: .2;
+    cursor: default;
+
+}
+.search__calendar--days-of-week {
+
+    color: #059E87;
+    text-transform: capitalize;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+
+}
+.search__calendar tbody td.disabled {
+
+    cursor: default;
+    color: #C0C9CC;
+
+}
+.search__calendar tbody td.not-current-month {
+
+    color: #8C9DA1;
+
+}
+.search__calendar tbody td {
+
+    cursor: pointer;
+    border-radius: 3px;
+
+}
+.search__calendar tbody td.not-current-month:hover,.search__calendar tbody td.enable:hover {
+    background: rgb(219, 223, 223);
+}
+.search__calendar--hr {
+
+    margin: 5px -15px;
+    background-color: #DCE3E6;
+    border: 0;
+    outline: 0;
+    height: 1px;
+
+}
+.search__calendar--container {
+
+    outline: 0;
+    border-radius: .3125em;
+    border: 1px solid #DCE3E6;
+    text-align: center;
+    overflow-x: hidden;
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    margin-top: 10px;
+    margin-right: 80px;
+    margin-left: 10%;
+    padding: 0;
+    width: 80%;
+}
+.search__timeslots {
+
+    display: table;
+    width: 100%;
+    margin: 13px auto 8px;
+    text-align: center;
+    white-space: nowrap;
+    user-select: none;
+    cursor: default;
+
+}
+.search__timeslots time {
+
+    display: table-cell;
+    color: #13181A;
+    font-family: SourceSansPro,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    min-width: 33px;
+    line-height: 25px;
+    margin: 0;
+    border-radius: 3px;
+    padding: 3px 0;
+
+}
+.search__timeslots time:hover {
+    background: rgb(219, 223, 223);
+}
+.search__timeslots time.selected {
+
+    background: #01C3A7;
+    color: #fff;
+    font-weight: 600;
+
+}
+.search__calendar tbody td.selected, .search__calendar tbody td.selected:hover {
+
+    background: #01C3A7;
+    color: #FFF;
+    font-weight: 600;
+
+}
+/*******************T3************************/
+.split-panel--right .ct-panel {
+    position: relative;
+}
+.profiles__list {
+    padding: 0;
+    list-style-type: none;
+}
+.profile-selector {
+    margin-bottom: 20px;
+}
+.profile-selector__frame {
+    border-radius: 5px;
+    border: 1px solid #DCE3E6;
+    position: relative;
+    display: table;
+    width: 80%;
+    margin-left: 10%;
+}
+.select::after {
+    position: absolute;
+    width: 22px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: auto;
+    content: ' ';
+    background: url(https://assets.trainline.eu/assets/images/disclosure-down-a9dad01915b8354f6b3a63e4e4c4d720.svg) left center no-repeat;
+    pointer-events: none;
+}
+.firefox .select select {
+    padding-left: 6px;
+    -moz-appearance: none;
+    text-indent: .01px;
+    text-overflow: '';
+}
+.profile-selector__select.select select {
+    border: 0;
+    height: 39px;
+    line-height: 22px;
+}
+.select select {
+    background-color: #FFF;
+    border-radius: .3125em;
+    border: 1px solid #DCE3E6;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px 10px 10px;
+        padding-left: 10px;
+    cursor: pointer;
+    outline: 0;
+}
+.profiles__add{
+    margin-left: 10%;
+    width: 80%;
+}
+.profiles__add span {
+    background: url(https://assets.trainline.eu/assets/images/add-passenger-mint-bbc15516e9c9617861585d1b3c2cb55f.svg) left center no-repeat;
+    padding-left: 30px;
+}
+.profiles__sign-in-title {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: .2em;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.profiles__sign-in-message {
+    margin-top: 0;
+    margin-bottom: 9px;
+    margin-left: 10%;
+    width: 80%;
+}
+.profiles__sign-in-button {
+    border: 0;
+    background: url(https://assets.trainline.eu/assets/images/sign-in-color-5d80bf40ab2a0cba0a9359a787bf8c8b.svg) left center no-repeat;
+    font-size: 13px;
+    color: #059E87;
+    letter-spacing: .02em;
+    padding: 2px 13px 2px 31px;
+    text-transform: uppercase;
+    margin-left: 10%;
+}
+.profiles__sign-in-button:hover{
+    color: rgb(55, 204, 182);
+}
+.profile-selector__add-card-button.has-no-cards{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    background: 0 0;
+    color: #059E87;
+}
+.profile-selector__add-card-button.has-no-cards:hover{
+    background-color: #D3F9F4;
+    color: #059E87;
+    border: 1px solid #01C3A7;
+}
+.profile-selector__extras {
+    display: table-cell;
+    border-left: 1px solid #DCE3E6;
+    text-align: center;
+    position: relative;
+    width: 50%;
+}
+.profile-selector__select.select {
+    display: table-cell;
+}
+.select {
+    position: relative;
+    display: inline-block;
+}
+.firefox .select select {
+    padding-left: 6px;
+    -moz-appearance: none;
+    text-indent: .01px;
+    text-overflow: '';
+}
+.profile-selector__select.select select {
+    border: 0;
+    height: 39px;
+    line-height: 22px;
+}
+.profile-selector__add-card-button {
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+}
+.select select {
+    -moz-appearance: none;
+    -o-appearance: none;
+}

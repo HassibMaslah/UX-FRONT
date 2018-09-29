@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="style.css">
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+ <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+        
+    <div class="testbox">
+            <h1>Quel est votre trajet ?</h1>
+        
+            <form action="/">
+                
+            <div class="grp1">
+            <input type="text" name="dep" class="search__departure-input " id="dep" placeholder="Saisissez votre gare de départ…" required/>
+            <input tabindex="1" autocomplete="off" spellcheck="false" placeholder="Via" id="ember2481" class="search__via-input ember-text-field textfield station-text-field empty station-text-field-- search__input focus empty ember-view" type="text">
+            <input type="text" name="arr" class="search__arrival-input " id="arr" placeholder="Saisissez votre gare d’arrivée…" required/>
+            <!--button id="ember698" class="search__swap swap-button swap-button--in-between ember-view">
+                <div class="swap-button__equilibrium">
+                    <span class="swap-button__label">Échanger les gares de départ et d’arrivée</span>
+                </div>
+            </button-->
+            </div>
+
+            <div class="grp1">
+                <input tabindex="1" id="ember704" value="Aller" class="search__departure-date-input search__input focus ember-view" type="button" style="text-align:left;">
+                <!--div class="ct-placeholder" style="color: rgb(169, 169, 169); position: absolute; z-index: 2; -moz-user-select: none; line-height: 20px; left: 36px; margin-top: -30px; display: none;">
+                Aller
+                </div-->
+
+                <input tabindex="1" id="ember704" value="Rentrer" class="search__return-date-input search__input focus empty ember-view" type="button" style="text-align:left;">
+                <!--div class="ct-placeholder" style="color: rgb(169, 169, 169); position: absolute; z-index: 2; -moz-user-select: none; line-height: 20px; left: 36px; margin-top: -30px; display: none;">
+                Rentrer
+                </div-->   
+            </div>
+
+            <div class="grp1">
+                <div class="search__section search__section--participants">
+                    <div class="search__field search__participants required search__participants--constrain grouped-input--single ">
+                        <input tabindex="1" type="button" value="1 Adult (26 - 59)" class="search__participants-input passengers-field passengers-field__passengers--1 search__input">
+                        <div class="ct-placeholder" style="color: rgb(169, 169, 169); position: absolute; z-index: 2; user-select: none; line-height: 20px; left: 36px; margin-top: -30px; display: none;">
+                            Passagers
+                        </div>
+                        <button type="button" class="search__add-participants" data-ember-action="" data-ember-action-716="716">
+                            Selectionner autres passagers
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="search__add-cui"><a class="">Utilisez un code de réduction</a></div>
+            
+
+            <div class="search__button progress-button">
+                <button type="button" tabindex="1" class="button progress-button__button">
+                    Rechercher
+                </button>
+            </div>
+
+            </form>
+    </div>
+    
+    <div class="testbox2" id="T0"> 
+            <div class="split-panel__arrow" id="flech"></div>
+            <div class="landing-panel__header">
+                    <h3>Les petits plus de Trainline</h3>
+            </div>    
+            <form action="/">
+                <div class="landing-panel__content">
+                        <ul class="landing-panel__list">
+                            <li class="landing-panel__list-item">
+                              <span class="icon--price"></span>
+                              <div><b>Vos billets au meilleur prix</b><br> Achetez vos billets aux prix fixés par les transporteurs, sans frais supplémentaires.</div>
+                            </li>
+                            <li class="landing-panel__list-item">
+                              <span class="icon--loyalty-card"></span>
+                              <div><b>Cartes de réduction</b><br> Elles sont toutes acceptées, comme vos cartes de fidélité.</div>
+                            </li>
+                            <li class="landing-panel__list-item">
+                              <span class="icon--payment"></span>
+                              <div><b>Payez en toute sécurité</b><br> CB, Amex, PayPal, Chèques-Vacances ANCV&nbsp;: c’est vous qui voyez.</div>
+                            </li>
+                        </ul>
+                    
+                      <div class="hr">
+                      </div>
+                    
+                      <div class="landing-panel__app-download">
+                        <p class="landing-panel__app-download-title">L’app leader pour voyager en train et en bus en Europe</p>
+                        <div class="landing-panel__app-download-badges">
+                          <a href="http://t.news.thetrainline.com/webApp/app_fr?referrer=fr_homePage" class="app-download-badge app-download-badge--apple-app-store">
+                      <img src="https://assets.trainline.eu/assets/images/open-home/fr/app_store-982918c20bc831835da249d342f31bbd.svg" alt="Télécharger dans l’App Store" class="app-download-badge--image">
+                    </a>
+                          <a href="http://t.news.thetrainline.com/webApp/app_fr?referrer=fr_homePage" class="app-download-badge app-download-badge--google-play-store">
+                      <img src="https://assets.trainline.eu/assets/images/open-home/fr/google_play-5397aa8a86e85cf8920c5580245fd572.svg" alt="Disponible sur Google Play" class="app-download-badge--image">
+                    </a>
+                        </div>
+                      </div>
+                    </div>
+            </form>
+    </div>
+    <div class="testbox2" id="T1"> 
+        <div class="split-panel__arrow" id="flech"></div>
+            <div class="ct-panel">
+                    <div id="ember1059" class="ember-view">
+                          <h1 class="search__title">Choisissez une gare de départ</h1>
+                                <ul data-help-contexts="zone_origin_destination_selection" class="search__list search__stations--list" data-ember-action="" data-ember-action-1060="1060">
+                                    <li id="ember1066" class="search__list-item search__stations--list-item station-item highlighted ember-view">
+                                    <a class="search__list-link search__stations--list-link">
+                                    Paris
+                                    </a>
+                                    </li>
+                                    <li id="ember1068" class="search__list-item search__stations--list-item station-item ember-view">
+                                    <a class="search__list-link search__stations--list-link">
+                                    London (Londres)
+                                    </a>
+                                    </li>
+                                    <li id="ember1070" class="search__list-item search__stations--list-item station-item ember-view">
+                                    <a class="search__list-link search__stations--list-link">
+                                    Lyon
+                                    </a>
+                                    </li>
+                                    <li id="ember1072" class="search__list-item search__stations--list-item station-item ember-view">
+                                    <a class="search__list-link search__stations--list-link">
+                                    Lille
+                                    </a>
+                                    </li>
+                                    <li id="ember1074" class="search__list-item search__stations--list-item station-item ember-view">
+                                    <a class="search__list-link search__stations--list-link">
+                                    Bordeaux
+                                    </a>
+                                    </li>
+                                    <li id="ember1076" class="search__list-item search__stations--list-item station-item ember-view">
+                                    <a class="search__list-link search__stations--list-link">
+                                    Strasbourg
+                                    </a>
+                                    </li>
+                                    <li id="ember1078" class="search__list-item search__stations--list-item station-item ember-view">
+                                    <a class="search__list-link search__stations--list-link">
+                                    Marseille St-Charles
+                                    </a>
+                                    </li>
+                                </ul>
+                <button class="button--light search__list-button search__list-button--via search__via-icon"id="addVia">
+                Via
+                </button>
+                <button class="button--light search__list-button search__list-button--via" id="suppVia">
+                        Supprimer le via
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="testbox2" id="T2"> 
+            <div class="split-panel__arrow" id="flech"></div>
+            <div id="ember1360" class="ember-view"><h1 class="search__title"></h1>
+
+                <!---->
+                <div data-help-contexts="zone_departure_date_selection" class="search__calendar--container">
+                  <div id="ember1367" class="ember-view"><table class="search__calendar">
+                  <thead>
+                    <tr>
+                      <td class="search__calendar--decrement-month disabled" data-ember-action="" data-ember-action-1368="1368"></td>
+                      <td colspan="5" class="search__calendar--current-month">septembre 2018</td>
+                      <td class="search__calendar--increment-month " data-ember-action="" data-ember-action-1369="1369"></td>
+                    </tr>
+                    <tr class="search__calendar--days-of-week">
+                        <td>lun.</td>
+                        <td>mar.</td>
+                        <td>mer.</td>
+                        <td>jeu.</td>
+                        <td>ven.</td>
+                        <td>sam.</td>
+                        <td>dim.</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td id="ember1377" class="disabled not-current-month ember-view">27
+                </td>
+                          <td id="ember1379" class="disabled not-current-month ember-view">28
+                </td>
+                          <td id="ember1381" class="disabled not-current-month ember-view">29
+                </td>
+                          <td id="ember1383" class="disabled not-current-month ember-view">30
+                </td>
+                          <td id="ember1385" class="disabled not-current-month ember-view">31
+                </td>
+                          <td id="ember1387" class="disabled ember-view">1
+                </td>
+                          <td id="ember1389" class="disabled ember-view">2
+                </td>
+                      </tr>
+                      <tr>
+                          <td id="ember1392" class="disabled ember-view">3
+                </td>
+                          <td id="ember1394" class="disabled ember-view">4
+                </td>
+                          <td id="ember1396" class="disabled ember-view">5
+                </td>
+                          <td id="ember1398" class="disabled ember-view">6
+                </td>
+                          <td id="ember1400" class="disabled ember-view">7
+                </td>
+                          <td id="ember1402" class="disabled ember-view">8
+                </td>
+                          <td id="ember1404" class="disabled ember-view">9
+                </td>
+                      </tr>
+                      <tr>
+                          <td id="ember1407" class="disabled ember-view">10
+                </td>
+                          <td id="ember1409" class="disabled ember-view">11
+                </td>
+                          <td id="ember1411" class="disabled ember-view">12
+                </td>
+                          <td id="ember1413" class="disabled ember-view">13
+                </td>
+                          <td id="ember1415" class="disabled ember-view">14
+                </td>
+                          <td id="ember1417" class="disabled ember-view">15
+                </td>
+                          <td id="ember1419" class="disabled ember-view">16
+                </td>
+                      </tr>
+                      <tr>
+                          <td id="ember1422" class="disabled ember-view">17
+                </td>
+                          <td id="ember1424" class="disabled ember-view">18
+                </td>
+                          <td id="ember1426" class="disabled ember-view">19
+                </td>
+                          <td id="ember1428" class="disabled ember-view">20
+                </td>
+                          <td id="ember1430" class="disabled ember-view">21
+                </td>
+                          <td id="ember1432" class="disabled ember-view">22
+                </td>
+                          <td id="ember1434" class="disabled ember-view">23
+                </td>
+                      </tr>
+                      <tr>
+                          <td id="ember1437" class="disabled ember-view">24
+                </td>
+                          <td id="ember1439" class="disabled ember-view">25
+                </td>
+                          <td id="ember1441" class="disabled ember-view">26
+                </td>
+                          <td id="ember1443" class="disabled ember-view">27
+                </td>
+                          <td id="ember1445" class="enable today ember-view">28
+                </td>
+                          <td id="ember1447" class="enable ember-view">29
+                </td>
+                          <td id="ember1449" class="enable ember-view">30
+                </td>
+                      </tr>
+                      <tr>
+                          <td id="ember1452" class="not-current-month ember-view">1
+                </td>
+                          <td id="ember1454" class="not-current-month ember-view">2
+                </td>
+                          <td id="ember1456" class="not-current-month ember-view">3
+                </td>
+                          <td id="ember1458" class="not-current-month ember-view">4
+                </td>
+                          <td id="ember1460" class="not-current-month ember-view">5
+                </td>
+                          <td id="ember1462" class="not-current-month ember-view">6
+                </td>
+                          <td id="ember1464" class="not-current-month ember-view">7
+                </td>
+                      </tr>
+                  </tbody>
+                </table>
+                </div>
+                
+                  <hr class="search__calendar--hr">
+                
+                  <div id="ember1467" class="search__timeslots ember-view">  <time>
+                  6h
+                </time>
+                  <time>
+                  8h
+                </time>
+                  <time>
+                  10h
+                </time>
+                  <time>
+                  12h
+                </time>
+                  <time>
+                  14h
+                </time>
+                  <time>
+                  16h
+                </time>
+                  <time>
+                  18h
+                </time>
+                  <time>
+                  20h
+                </time>
+                  <time>
+                  22h
+                </time>
+                </div>
+                </div>
+                </div>
+    </div>
+
+    <div class="testbox2" id="T3"> 
+            <div class="split-panel__arrow" id="flech"></div>          
+        <div class="ct-panel">
+            <div id="ember1719" class="ember-view">
+                <h1 class="search__title">Choisissez vos passagers</h1>
+            <ul class="profiles__list">
+                <li id="ember1725" class="profile-selector ember-view"><div class="profile-selector__frame ">
+            <!---->
+              <span id="ember1730" class="profile-selector__select select ember-view">
+                    <select optiontargetpath="label" tabindex="1" id="select" class="ember-view">
+                    <option value="youth">
+                        Jeune (0 - 25)
+                    </option>
+                    
+                    <option value="adult" selected="selected">
+                        Adulte (26 - 59)
+                    </option>
+            
+                    <option value="senior">
+                        Senior (60+)
+                    </option>
+                    
+                    </select>
+            </span>
+            
+              <div class="profile-selector__extras ">
+                    <button type="button" title="Cartes et abonnements" class="profile-selector__add-card-button has-no-cards" data-ember-action="" data-ember-action-1746="1746">
+                      Cartes et abonnements
+                    </button>
+              </div>
+            </div>
+            <!----></li>
+            </ul>
+            
+              <button class="button button--light profiles__add" data-ember-action="" data-ember-action-1747="1747">
+                <span>Ajouter un autre passager</span>
+              </button>
+            
+            <h3 class="profiles__sign-in-title">Retrouver vos passagers sauvegardés&nbsp;?</h3>
+            <p class="profiles__sign-in-message">Connectez-vous à votre compte pour accéder aux passagers enregistrés lors de vos précédentes recherches.</p>
+            <button class="profiles__sign-in-button" data-ember-action="" data-ember-action-1748="1748">
+              Se connecter
+            </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery JS -->
+    <script src="jquery-1.12.0.min.js"></script>
+    <!-- Test JS -->
+    <script src="test.js"></script>
+</body>
+</html>
